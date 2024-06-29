@@ -6,7 +6,10 @@ def main():
         nownum = int(input("Enter a number here:"))
         
         if prenum != None and nownum <= prenum:
-            numbers.append()
+            numbers.append(nownum)
+            
+        else
+        
 
     ########################################
     # Do not delete the return statement
