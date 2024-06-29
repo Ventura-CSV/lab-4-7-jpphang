@@ -3,17 +3,18 @@ def main():
     prenum = None
     
     while True:
+
         nownum = int(input("Enter a number here:"))
         
         if prenum != None and nownum <= prenum:
             numbers.append(nownum)
             
-        else
+        else:
+            if prenum != None:
+                break
         
+        prenum = nownum
 
-    ########################################
-    # Do not delete the return statement
-    ########################################
     print(*numbers)
     return numbers
 
