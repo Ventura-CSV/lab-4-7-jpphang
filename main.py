@@ -1,10 +1,12 @@
 def main():
     numbers = []
-    """
-    ########################################
-    Code Your Program here
-    ########################################
-    """
+    prenum = None
+    
+    while True:
+        nownum = int(input("Enter a number here:"))
+        
+        if prenum != None and nownum <= prenum:
+            numbers.append()
 
     ########################################
     # Do not delete the return statement
