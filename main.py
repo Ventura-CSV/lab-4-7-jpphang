@@ -1,19 +1,18 @@
 def main():
     numbers = []
-    prenum = None
+    pre_val = None
     
     while True:
-
-        nownum = int(input("Enter a number here:"))
         
-        if prenum != None and nownum <= prenum:
-            numbers.append(nownum)
+        cur_val = int(input("Enter a number here:"))
+        
+        if pre_val is not None and cur_val <= pre_val:
+            numbers.append(cur_val)
             
         else:
-            if prenum != None:
+            if pre_val is not None:
                 break
-        
-    prenum = nownum
+        pre_val = cur_val
 
     print(*numbers)
     return numbers
