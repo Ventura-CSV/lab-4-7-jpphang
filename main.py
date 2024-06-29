@@ -13,7 +13,7 @@ def main():
             if prenum != None:
                 break
         
-        prenum = nownum
+    prenum = nownum
 
     print(*numbers)
     return numbers
